@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addisu Fetene | AI Visual Creator & Video Editor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .hero .tagline {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .hero .location {
+            color: #888;
+            font-size: 1.1em;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* Sections */
+        section {
+            background: white;
+            margin: 40px auto;
+            padding: 60px 0;
+            border-radius: 20px;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: #f8f9ff;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .service-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .portfolio-item {
+            background: #f8f9ff;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .portfolio-item iframe,
+        .portfolio-item video {
+            width: 100%;
+            height: 250px;
+            border: none;
+        }
+        
+        .portfolio-info {
+            padding: 25px;
+        }
+        
+        .portfolio-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .portfolio-info a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        /* Tools */
+        .tools-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .tool-tag {
+            background: #667eea;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+        
+        /* Contact */
+        .contact-info {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        
+        .contact-info p {
+            margin: 15px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            padding: 40px 0;
+            border-radius: 50px 50px 0 0;
+            color: #666;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Addisu Fetene (Ada)</h1>
+            <p class="tagline">AI Visual Creator | Professional Video Editor</p>
+            <p class="location">📍 Ethiopia |  Remote-Ready</p>
+            <a href="mailto:your.email@example.com" class="cta-button">Let's Work Together</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <div class="container" style="text-align: center; max-width: 800px;">
+                <p style="font-size: 1.2em; line-height: 1.8;">
+                    I'm a video editor and AI visual creator specializing in <strong>high-retention short-form and YouTube content</strong>. 
+                    I handle full production workflows including AI voiceovers, custom visuals, stock footage integration, 
+                    advanced editing, and detailed sound design.
+                </p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">269K</div>
+                        <div class="stat-label">Viral Views</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4K+</div>
+                        <div class="stat-label">TikTok Followers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Hours/Week</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section>
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🎬 Short-Form Video Editing</h3>
+                    <p>TikTok, Reels, and YouTube Shorts optimized for retention, hooks, and algorithm performance.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🤖 AI-Powered Production</h3>
+                    <p>AI voiceovers (ElevenLabs), AI visuals (Veo 3, Nano Banana), and custom animations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📺 YouTube Full Production</h3>
+                    <p>Script-to-publish support: editing, thumbnails, sound design, and pacing.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🎨 Thumbnail & Visual Design</h3>
+                    <p>Click-worthy thumbnails and brand-consistent visual assets.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🔊 Sound Design & Mixing</h3>
+                    <p>Clean audio, dynamic SFX, and music syncing for emotional impact.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section>
+            <h2>Featured Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <iframe src="https://drive.google.com/file/d/19C1Kr5kP9ot_7yyv4dlprRmd0TtC310E/preview"></iframe>
+                    <div class="portfolio-info">
+                        <h3>Client Promo Edit</h3>
+                        <p>AI voiceover + visuals + sound design</p>
+                        <a href="https://drive.google.com/file/d/19C1Kr5kP9ot_7yyv4dlprRmd0TtC310E/view" target="_blank">Watch →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div style="background: #667eea; height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2em;">
+                        TikTok Video<br>269K Views
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Viral AI TikTok</h3>
+                        <p>Organic reach: 269K views</p>
+                        <a href="https://www.tiktok.com/t/ZThLtJUM3" target="_blank">Watch on TikTok →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/rZSwOzr4shI"></iframe>
+                    <div class="portfolio-info">
+                        <h3>AI Music Animation</h3>
+                        <p>Creative AI-generated visuals</p>
+                        <a href="https://youtube.com/shorts/rZSwOzr4shI" target="_blank">Watch →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/pZwXAGnOeKE"></iframe>
+                    <div class="portfolio-info">
+                        <h3>Client YouTube Video</h3>
+                        <p>Full production & editing</p>
+                        <a href="https://youtu.be/pZwXAGnOeKE" target="_blank">Watch →</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <iframe src="https://drive.google.com/file/d/1CFsDJaldQtLfnS5WGzYZ1exstTDTQT-Z/preview"></iframe>
+                    <div class="portfolio-info">
+                        <h3>Kids AI Animation</h3>
+                        <p>Family-friendly content</p>
+                        <a href="https://drive.google.com/file/d/1CFsDJaldQtLfnS5WGzYZ1exstTDTQT-Z/view" target="_blank">Watch →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tools Section -->
+        <section>
+            <h2>Tools & Technology</h2>
+            <div class="tools-list">
+                <span class="tool-tag">DaVinci Resolve</span>
+                <span class="tool-tag">Veo 3</span>
+                <span class="tool-tag">Nano Banana</span>
+                <span class="tool-tag">ElevenLabs</span>
+                <span class="tool-tag">Mac Mini M4</span>
+                <span class="tool-tag">AI Voiceovers</span>
+                <span class="tool-tag">Sound Design</span>
+            </div>
+        </section>
+        
+        <!-- Availability Section -->
+        <section>
+            <h2>Availability</h2>
+            <div class="contact-info">
+                <p>✅ <strong>Available:</strong> Full-time (30+ hours/week)</p>
+                <p>✅ <strong>Start Date:</strong> Immediate</p>
+                <p>✅ <strong>Timezone:</strong> East Africa Time (EAT) — flexible for US/EU overlap</p>
+                <p>✅ <strong>Certifications:</strong> 2x Acadium Apprenticeships (in progress)</p>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section>
+            <h2>Let's Create Together</h2>
+            <div class="contact-info">
+                <p>Ready to elevate your content with AI-powered video production?</p>
+                <p style="margin-top: 30px;">
+                    <a href="mailto:your.email@example.com" class="cta-button">Get In Touch</a>
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Addisu Fetene. All rights reserved.</p>
+            <p>Crafting high-retention visuals with AI precision & human storytelling</p>
+        </div>
+    </footer>
+</body>
+</html>
